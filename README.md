@@ -68,9 +68,6 @@ Develop a **collaborative filtering recommender system** to personalize tourist 
 
 ---
 
-## 📂 Repository Structure  
-
----
 
 ## ✨ Future Improvements  
 - Experiment with **ResNet, Inception, EfficientNet** for higher classification accuracy.  
