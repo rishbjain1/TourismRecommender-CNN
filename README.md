@@ -4,10 +4,10 @@
 # 🏛️ Preserving Heritage: Enhancing Tourism with AI  
 
 ## 📌 Project Overview  
-This project combines **computer vision** and **recommendation systems** to solve real-world challenges in tourism and cultural heritage.  
+This capstone project combines **computer vision** and **recommendation systems** to enhance cultural heritage preservation and improve the tourism experience.  
 
-- **Part 1:** Classify images of historical structures using **CNNs with transfer learning** to monitor heritage sites and assist preservation.  
-- **Part 2:** Build a **tourism recommendation engine** that personalizes attraction suggestions for users based on demographics, preferences, and ratings.  
+- **Part 1:** Classified historical structures using **CNNs with transfer learning** to support heritage monitoring.  
+- **Part 2:** Built a **collaborative filtering recommendation system** to suggest tourist attractions based on user demographics and ratings.  
 
 ---
 
@@ -17,16 +17,15 @@ This project combines **computer vision** and **recommendation systems** to solv
 Develop a **TensorFlow/Keras CNN model** to categorize historical structures from images.  
 
 ### Workflow  
-- **Data Preparation:** Loaded training & test datasets (`Structures_dataset.zip`, `dataset_test`).  
-- **Exploratory Data Analysis:** Visualized samples with **OpenCV**.  
+- **Data Preparation:** Unpacked and organized structure datasets.  
+- **Visualization:** Used **OpenCV** to display sample images per class.  
 - **Modeling:**  
-  - Transfer learning with pre-trained CNN backbones.  
-  - Added dense layers + dropout for regularization.  
-  - Hyperparameter tuning (optimizer, loss function, callbacks).  
+  - Implemented **MobileNetV2** with transfer learning.  
+  - Frozen convolutional layers, added dense layers + dropout for regularization.  
 - **Training:**  
-  - With and without data augmentation.  
-  - Early stopping to prevent overfitting.  
-- **Evaluation:** Monitored validation accuracy; visualized learning curves.  
+  - Configured callbacks with **EarlyStopping**.  
+  - Trained models with and without data augmentation.  
+- **Evaluation:** Visualized accuracy/loss curves, checked for overfitting.  
 
 ### Tech Stack  
 `TensorFlow`, `Keras`, `OpenCV`, `NumPy`, `Matplotlib`, `Seaborn`  
@@ -36,19 +35,18 @@ Develop a **TensorFlow/Keras CNN model** to categorize historical structures fro
 ## 🗺️ Part 2: Tourism Recommendation Engine  
 
 ### Objective  
-Develop a **collaborative filtering recommender system** using user ratings and attraction metadata.  
+Develop a **collaborative filtering recommender system** to personalize tourist attraction suggestions.  
 
 ### Workflow  
-- **Datasets:**  
-  - `user.csv` → user demographics  
-  - `tourism_with_id.csv` → attraction details (category, city, price, rating)  
-  - `tourism_rating.csv` → user ratings  
+- **Data Cleaning:**  
+  - Removed duplicate/missing values.  
+  - Dropped irrelevant columns (empty, redundant, or high missing %).  
 - **EDA:**  
-  - Cleaned and merged datasets.  
-  - Analyzed demographics, top-rated attractions, and category insights.  
+  - Explored user demographics (age distribution, source of tourists).  
+  - Analyzed categories of tourist spots and city-level insights.  
 - **Modeling:**  
-  - Built collaborative filtering model to recommend places.  
-  - Generated recommendations based on user history and similar tourists.  
+  - Implemented **cosine similarity** and **Truncated SVD** for collaborative filtering.  
+  - Recommended places based on user similarity and past ratings.  
 
 ### Tech Stack  
 `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`  
@@ -56,19 +54,21 @@ Develop a **collaborative filtering recommender system** using user ratings and 
 ---
 
 ## 🚀 Results  
-- **CNN classifier** that categorizes heritage structures with strong accuracy.  
-- **Tourism recommender system** that personalizes attraction suggestions, helping enhance visitor experience.  
+- **CNN classifier** achieved strong validation accuracy in categorizing historical structures.  
+- **Tourism recommender system** successfully provided personalized attraction suggestions tailored to user interests and demographics.  
 
 ---
 
 ## 🔑 Skills Highlighted  
-- Deep Learning (CNNs, Transfer Learning)  
+- Deep Learning (CNNs, Transfer Learning, MobileNetV2)  
 - Computer Vision (Image Classification, OpenCV)  
-- Recommendation Systems (Collaborative Filtering)  
+- Recommendation Systems (Collaborative Filtering with Cosine Similarity & SVD)  
 - Data Cleaning & EDA (Pandas, NumPy, Visualization)  
-- Model Training, Tuning, and Evaluation  
+- Model Training, Hyperparameter Tuning, and Evaluation  
 
 ---
+
+## 📂 Repository Structure  
 
 ---
 
